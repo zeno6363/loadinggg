@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VITRUM RP - Loading Screen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="overlay"></div>
+  <div class="particles" id="particles"></div>
+
+  <main class="layout">
+    <section class="left panel">
+      <div class="gmod-brand">
+        <span class="gmod-icon">g</span>
+        <span>garry's mod</span>
+      </div>
+
+      <p class="eyebrow">Bienvenue sur</p>
+      <h1>VITRUM RP</h1>
+      <p class="desc">
+        Serveur DarkRP / RP Serious. Une expérience unique, stable et optimisée.
+      </p>
+
+      <div class="features">
+        <div class="feature"><span>♛</span><div><b>Staff actif</b><small>Une équipe disponible et à l’écoute</small></div></div>
+        <div class="feature"><span>👥</span><div><b>Communauté active</b><small>Rejoins une communauté mature</small></div></div>
+        <div class="feature"><span>🛡</span><div><b>Contenu unique</b><small>Systèmes exclusifs et optimisés</small></div></div>
+        <div class="feature"><span>↻</span><div><b>Mises à jour régulières</b><small>Nouveau contenu chaque semaine</small></div></div>
+      </div>
+
+      <div class="small-buttons">
+        <button data-link="https://discord.gg/tondiscord">Discord</button>
+        <button data-link="https://ton-site.fr">Site web</button>
+      </div>
+    </section>
+
+    <section class="center">
+      <img class="logo" src="assets/vitrum-logo.png" alt="Logo VITRUM RP" />
+
+      <div class="loading-box">
+        <h2>Connexion au serveur</h2>
+        <p id="status">Chargement des ressources...</p>
+        <div class="progress-wrap">
+          <div class="progress"><div id="progressFill"></div></div>
+          <span id="percent">0%</span>
+        </div>
+      </div>
+    </section>
+
+    <aside class="right">
+      <section class="panel admins">
+        <h3>♛ Équipe d’administration</h3>
+        <div id="adminList"></div>
+      </section>
+
+      <section class="panel queue hidden" id="queuePanel">
+        <h3>◷ File d’attente</h3>
+        <p>Le serveur est plein. Vous avez été placé dans la file d’attente.</p>
+
+        <div class="queue-grid">
+          <div>
+            <small>Position dans la file</small>
+            <strong><span id="queuePosition">0</span> / <span id="queueTotal">0</span></strong>
+          </div>
+          <div>
+            <small>Temps estimé</small>
+            <strong id="queueEta">--:--</strong>
+          </div>
+        </div>
+
+        <button class="danger" id="leaveQueue">Quitter la file</button>
+      </section>
+    </aside>
+  </main>
+
+  <nav class="bottom-buttons">
+    <button data-link="https://ton-site.fr">🌐 <span>Site web<small>Visiter le site officiel</small></span></button>
+    <button data-link="https://ton-site.fr/reglement">📋 <span>Règles<small>Consulter les règles</small></span></button>
+    <button data-link="https://ton-site.fr/boutique">🛒 <span>Boutique<small>Soutenir le serveur</small></span></button>
+    <button data-link="https://discord.gg/tondiscord">💬 <span>Discord<small>Rejoindre la communauté</small></span></button>
+    <button data-link="https://steamcommunity.com">🔧 <span>Workshop<small>Contenu personnalisé</small></span></button>
+  </nav>
+
+  <footer>
+    <span>💡 Astuce : utilisez <b>/menu</b> pour accéder aux fonctionnalités.</span>
+    <span>Merci de votre patience et bon jeu sur <b>VITRUM RP</b> ! 💙</span>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
